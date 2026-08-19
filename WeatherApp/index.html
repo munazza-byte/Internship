@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Weather App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="container">
+         <h1>Weather App</h1>
+        <header>
+            <input type="text" class="input" placeholder="Enter Location....">
+            <button type="button" class="button" onclick=""><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#000000"><path d="M784-120 532-372q-30 24-69 38t-83 14q-109 0-184.5-75.5T120-580q0-109 75.5-184.5T380-840q109 0 184.5 75.5T640-580q0 44-14 83t-38 69l252 252-56 56ZM380-400q75 0 127.5-52.5T560-580q0-75-52.5-127.5T380-760q-75 0-127.5 52.5T200-580q0 75 52.5 127.5T380-400Z"/></svg></button>
+        </header>
+        <main>
+            <section class="location">
+                <div class="city">City, Country</div>
+                <div class="date">Day, Date</div>
+            </section>
+            <div class="current">
+                <div class="temp">0<span>°C</span></div>
+                <div class="weather-block">
+                    <div class="icon"></div>
+                    <div class="weather">Weather</div>
+                </div>
+                <div class="humidity">Humidity</div>
+                <div class="wind">Wind</div>
+            </div>
+        </main>
+         
+        
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
