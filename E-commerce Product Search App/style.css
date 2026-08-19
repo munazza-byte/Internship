@@ -1,0 +1,93 @@
+body {
+      font-family: Arial, sans-serif;
+      padding: 0;
+      background-image: url(laptop-blank-screen-hopping-cart-full-gifts-with-copyspace-online-shopping-concept.jpg);
+      background-attachment: fixed;
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+    }
+    .container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background-color: rgba(0, 0, 0, 0.3);
+    }
+    h1 {
+      color: #fff;
+    }
+    #searchBox {
+      font-size: 17px;
+      padding: 10px;
+      width: 330px;
+      border: 2px solid #ccc;
+      border-radius: 5px;
+      outline: none;
+    }
+    #searchBtn {
+      padding: 10px 15px;
+      background: #007bff;
+      color: white;
+      border: 5px solid #007bff ;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    #searchBtn:hover {
+      background: #0056b3;
+    }
+    .products {
+      margin-top: 20px;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+    .card {
+      background: white;
+      padding: 15px;
+      border-radius: 10px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+      text-align: center;
+      /* display: none; hidden until filled by JS */
+    }
+    .card:hover{
+      background-color: rgba(0, 0, 0, 0.7);
+    }
+    .card img {
+      max-width: 100%;
+      height: 150px;
+      object-fit: cover;
+      border-radius: 5px;
+    }
+    .card h3 {
+      margin: 10px 0;
+      font-size: 18px;
+    }
+    .card p {
+      font-size: 14px;
+      color: #666;
+    }
+    .price {
+      font-size: 16px;
+      font-weight: bold;
+      color: #28a745;
+    }
+    .old-price {
+      text-decoration: line-through;
+      color: gray;
+      margin-right: 8px;
+    }
+    .new-price {
+      font-weight: bold;
+      color: green;
+    }
+    .card:hover h3,
+    .card:hover p,
+    .card:hover .price,
+    .card:hover .old-price {
+      color: #fff;
+}
+
+    .card:hover .new-price {
+      color: #28a745; /* keep discount price green */
+}
